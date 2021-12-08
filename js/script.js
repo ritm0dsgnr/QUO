@@ -10,6 +10,20 @@ $("[data-scroll]").on("click", function(event) {
     }, 600);
 });
 
+$(".burger").on("click", function(event) {
+    $(".nav__adapt").toggleClass("active");
+    $(".burger").toggleClass("active");
+    $(".nav__link__adapt").toggleClass("active");
+    $("body").toggleClass("lock");
+});
+
+$(".nav__adapt").on("click", function(event) {
+    $(".burger").removeClass("active");
+    $(".nav__link__adapt").removeClass("active");
+    $(".nav__adapt").removeClass("active");
+    $("body").removeClass("lock");
+});
+
 function onEntry(entry) {
   entry.forEach(change => {
   if (change.isIntersecting) {
