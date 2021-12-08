@@ -1,4 +1,26 @@
 @font-face {
+  font-family: 'SBSansDisplay';
+  src: url(../font/SBSansDisplay-Regular.eot);
+  src: url(../font/SBSansDisplay-Regular.eot?#iefix) format('embedded-opentype'),
+       url(../font/SBSansDisplay-Regular.otf) format('otf'),
+       url(../font/SBSansDisplay-Regular.svg#SBSansDisplay-Regular) format('svg'),
+       url(../font/SBSansDisplay-Regular.ttf) format('truetype'),
+       url(../font/SBSansDisplay-Regular.woff) format('woff'),
+       url(../font/SBSansDisplay-Regular.woff2) format('woff2');
+}
+
+@font-face {
+  font-family: 'SBSansText';
+  src: url(../font/SBSansText-Regular.eot);
+  src: url(../font/SBSansText-Regular.eot?#iefix) format('embedded-opentype'),
+       url(../font/SBSansText-Regular.otf) format('otf'),
+       url(./SBSansText-Regular.svg#SBSansText-Regular) format('svg'),
+       url(../font/SBSansText-Regular.ttf) format('truetype'),
+       url(../font/SBSansText-Regular.woff) format('woff'),
+       url(../font/SBSansText-Regular.woff2) format('woff2');
+}
+
+@font-face {
   font-family: 'Michroma';
   src: url('../font/Michroma-Regular.eot');
   src: local('☺'), 
@@ -45,9 +67,8 @@ ul li{list-style: none;}
 img{vertical-align: top;}
 
 body{
-  overflow-x:hidden;
-  font-family: 'Comfortaa', cursive;
-  font-weight: normal;
+  overflow-x: hidden;
+  font-family: 'SBSansText';
   background-color: #0A0A0A;
   color: #fff;
 }
@@ -102,6 +123,7 @@ body.lock{
 }
 
 .nav__link{
+  font-family: 'SBSansDisplay';
   position: relative;
   color: #fff;
   font-size: 30px;
@@ -199,6 +221,7 @@ body.lock{
 }
 
 .nav__link__adapt{
+  font-family: 'SBSansDisplay';
   cursor: pointer;
   display: none;
   color: #fff;
@@ -216,7 +239,7 @@ body.lock{
 }
 
 .title_intro{
-  font-family: 'Michroma';
+  font-family: 'SBSansDisplay';
   font-size: 70px;
   color: #fff;
 }
