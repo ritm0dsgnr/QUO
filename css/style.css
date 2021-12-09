@@ -31,6 +31,17 @@
   font-style: normal;
 }
 
+@font-face {
+  font-family: 'Comfortaa';
+  src: url('../font/Comfortaa.eot');
+  src: local('☺'), 
+  url('../font/Comfortaa.woff') format('woff'), 
+  url('../font/Comfortaa.ttf') format('truetype'), 
+  url('../font/Comfortaa.svg') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
 *{
   padding: 0;
   margin: 0;
@@ -235,11 +246,12 @@ body.lock{
 }
 
 .intro{
+  position: relative;
   margin-top: 85px;
 }
 
 .title_intro{
-  font-family: 'SBSansDisplay';
+  font-family: 'Michroma';
   font-size: 70px;
   color: #fff;
 }
@@ -319,7 +331,7 @@ body.lock{
 
 .intro_bg{
   position: absolute;
-  top: 70px;
+  top: -60px;
   right: 50px;
   z-index: -1;
   opacity: 0.03;
@@ -566,9 +578,12 @@ body.lock{
   justify-content: flex-start;
 }
 
+.footer__inner{
+  display: block;
+}
+
 .footer__contact .footer__inner:first-child{
   margin-right: 100px;
-
 }
 
 .footer_title{
@@ -577,33 +592,11 @@ body.lock{
 }
 
 .footer_text{
-  cursor: default;
-  font-size: 20px;
-  color: #fff;
-  margin-bottom: 10px;
-}
-
-.footer_ref{
-  cursor: pointer;
+  font-family: 'Comfortaa';
   font-size: 20px;
   color: #fff;
   margin-bottom: 10px;
   display: block;
-}
-
-.offert{
-  line-height: 140%;
-}
-
-/*------Animation------*/
-.main__title.anim{
-  opacity: 0;
-  transform: translateX(-120px);
-  transition: all 1s ease;
-}
-.main__title.anim-show{
-  opacity: 1;
-  transform: translateX(0);
 }
 
 /*---------------------*/
@@ -647,7 +640,7 @@ body.lock{
     padding: calc(20px + (50 - 20) * ((100vw - 320px) / (1920 - 320))) calc(15px + (50 - 15) * ((100vw - 320px) / (1920 - 320)));
   }
   .intro_bg{
-    top: calc(30px + (70 - 30) * ((100vw - 320px) / (1920 - 320)));
+    top: calc(25px + (-60 - 25) * ((100vw - 320px) / (1920 - 320)));
     right: calc(0px + (50 - 0) * ((100vw - 320px) / (1920 - 320)));
     max-width: calc(220px + (760 - 220) * ((100vw - 320px) / (1920 - 320)));
   }
