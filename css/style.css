@@ -103,7 +103,6 @@ body.lock{
 .line{
   width: 100%;
   height: 1px;
-
   background-color: #8A949B;
 }
 
@@ -243,6 +242,44 @@ body.lock{
 .nav__link__adapt.active{
   display: block;
   transition: all .3s;
+}
+
+.line_nav{
+  margin-top: 150px;
+  margin-bottom: 15px;
+  width: 100%;
+  height: 1px;
+  background-color: #8A949B;
+}
+
+.nav__footer{
+  padding: 0 10px;
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.nav__footer__inner{
+  text-align: left;
+  display: block;
+}
+
+.footer__contact .footer__inner:first-child{
+  margin-right: 100px;
+}
+
+.footer_title{
+  cursor: pointer;
+  margin-bottom: 30px;
+}
+
+.footer_text{
+  font-family: 'Comfortaa';
+  font-size: 20px;
+  color: #fff;
+  margin-bottom: 10px;
+  display: block;
 }
 
 .intro{
